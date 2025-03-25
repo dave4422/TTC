@@ -1,0 +1,8 @@
+data_module:
+  _target_: data.data_module.NPYLiverDataModule
+  _partial_: true
+  data_dir: "/vol/miltank/projects/ukbb/data/abdominal/liver_data/numpy/"
+  label_file: "/vol/aimspace/users/mildenbd/Projects/bin_sup_con_learning/binary_learning/data/liver_diagnosis_dict.json"
+  num_workers: 16
+  batch_size: ${batch_size}
+  persistent_workers: True

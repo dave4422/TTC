@@ -1,0 +1,8 @@
+# @package _global_
+
+tags: ["isic18", "cancer"]
+
+malignant_classes: ["MEL"]
+classes: [0,1]
+
+

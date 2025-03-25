@@ -1,0 +1,15 @@
+
+
+# contrastive.yaml
+_target_: models.sup_cont.ContrastiveViT
+
+max_epochs: ${trainer.max_epochs}
+output_dim: 128
+lr: 0.001
+batch_norm: False
+temperature: 0.1
+supervised: True
+warmup_epochs: 0
+optimizer_name: adam
+batch_size: ${batch_size}
+

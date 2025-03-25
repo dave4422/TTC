@@ -1,0 +1,8 @@
+# @package _global_
+
+tags: ["crc", "cancer"]
+
+malignant_classes: ["TUM"]
+classes: [0,1]
+
+

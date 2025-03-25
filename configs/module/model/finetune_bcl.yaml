@@ -1,0 +1,20 @@
+
+# finetune.yaml
+_target_: models.linear_classifier.FineTuneClassifier
+
+base_model: 
+  _target_: models.simclr.SimCLR
+  num_class: 2
+  network: resnet50
+num_ftrs: 2048
+num_classes: 2
+max_epochs: ${trainer.max_epochs}
+lr: 0.001
+nesterov: False
+p_dropout: 0.0
+weight_decay: 0
+hidden_dim_size: null
+warmup_epochs: 0
+optimizer_name: "adam"
+use_backbone: True
+base_model_path: ${base_model_path}

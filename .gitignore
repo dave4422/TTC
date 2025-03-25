@@ -1,0 +1,22 @@
+# ignore data directory
+/simclr/data/imagenet-mini/
+lightning_logs/
+__pycache__/
+*.json
+
+*.pkl
+iframe_figures/
+.ipynb_checkpoints
+
+*.ckpt
+ILSVRC2012/notes_img_net_smpl.md.md
+iNat21/test.py
+tb_logs
+
+logs/
+
+wandb
+wait.py
+eccv_outsource/
+*.log
+```
